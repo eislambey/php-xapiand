@@ -15,6 +15,8 @@ use function rtrim;
 
 class DefaultTransport implements TransportInterface
 {
+    private const OP_CONNECTTIMEOUT = 5;
+
     private string $uri;
 
     public function __construct(string $uri)
@@ -34,6 +36,7 @@ class DefaultTransport implements TransportInterface
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_CUSTOMREQUEST => $method,
             CURLOPT_HTTPHEADER => ["Content-Type: application/json"],
+            CURLOPT_CONNECTTIMEOUT => self::OP_CONNECTTIMEOUT,
         ]);
 
         if ($body) {
