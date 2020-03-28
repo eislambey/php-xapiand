@@ -1,5 +1,5 @@
 {
-  "name": "islambey/php-xapiand",
+  "name": "eislambey/php-xapiand",
   "description": "PHP client for Xapiand search server.",
   "type": "library",
   "license": "MIT",
