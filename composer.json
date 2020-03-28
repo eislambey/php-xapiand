@@ -1,0 +1,22 @@
+{
+  "name": "islambey/php-xapiand",
+  "description": "PHP client for Xapiand search server.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "emre can islambey",
+      "email": "eislambey@gmail.com"
+    }
+  ],
+  "require": {
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-mbstring": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Islambey\\Xapiand\\": "src/"
+    }
+  }
+}
